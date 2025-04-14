@@ -10,7 +10,7 @@ The primary focus of this documentation is the `MyBidder` class, which implement
 
 ## Features
 - **Auction Simulation**: Simulates an auction where bidders compete for items.
-- **Custom Bidding Strategies**: Includes multiple bidder implementations with unique strategies.
+- **Custom Bidding Strategies**: Includes multiple bidder implementations with different strategies.
 - **Extensibility**: Easily add new bidder implementations by adhering to the `Bidder` interface.
 
 ---
@@ -100,7 +100,7 @@ The `MyBidder` class employs a strategic approach to bidding:
    ```
 4. Run the simulation:
    ```bash
-   java -cp target/tradingbot-1.0-SNAPSHOT.jar org.example.Main
+   java -cp target/tradingbot-1.0-SNAPSHOT.jar auction.Main
    ```
 
 ---
@@ -111,14 +111,3 @@ The project includes a comprehensive test suite for the `MyBidder` class. To run
 mvn test
 ```
 
----
-
-## Contributing
-Contributions are welcome! To add a new bidder:
-1. Implement the `Bidder` interface.
-2. Add the new bidder to the `Main` class for simulation.
-
----
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
